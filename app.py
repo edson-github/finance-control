@@ -72,11 +72,14 @@ if pagina == "🏠 Dashboard":
     col1, col2, col3, col4 = st.columns(4)
 
     with col1:
-        total_receitas = receitas_df['valor'].sum() if not receitas_df.empty else 0
+        total_receitas = (receitas_df['valor'].sum()
+                         if not receitas_df.empty else 0)
         st.metric("Total Receitas", f"R$ {total_receitas:,.2f}")
 
     with col2:
-        total_despesas = despesas_df['valor'].sum() if not despesas_df.empty else 0
+        total_despesas = (despesas_df['valor'].sum() 
+                if not despesas_df.empty else 0)
+
         st.metric("Total Despesas", f"R$ {total_despesas:,.2f}")
 
     with col3:
@@ -104,7 +107,7 @@ if pagina == "🏠 Dashboard":
                 seis_meses_atras = hoje.replace(
                     year=hoje.year-1, month=hoje.month+6
                 )
-    
+
             if not receitas_df.empty:
                 receitas_filtradas = receitas_df[
                     receitas_df['data'] >= seis_meses_atras
@@ -118,10 +121,10 @@ if pagina == "🏠 Dashboard":
                 ]
             else:
                 despesas_filtradas = pd.DataFrame()
-      
+
             if not receitas_filtradas.empty or not despesas_filtradas.empty:
                 fig = go.Figure()
-        
+
                 if not receitas_filtradas.empty:
                     receitas_mensais = receitas_filtradas.groupby(
                         receitas_filtradas['data'].dt.to_period('M')
@@ -133,7 +136,7 @@ if pagina == "🏠 Dashboard":
                         name='Receitas',
                         line=dict(color='green', width=3)
                     ))
-         
+
                 if not despesas_filtradas.empty:
                     despesas_mensais = despesas_filtradas.groupby(
                         despesas_filtradas['data'].dt.to_period('M')
@@ -145,7 +148,7 @@ if pagina == "🏠 Dashboard":
                         name='Despesas',
                         line=dict(color='red', width=3)
                     ))
-        
+
                 fig.update_layout(
                     xaxis_title="Mês",
                     yaxis_title="Valor (R$)",
@@ -222,7 +225,7 @@ elif pagina == "💰 Receitas":
                 "Categoria",
                 ["Salário", "Freelance", "Investimentos", "Outros"]
             )
-   
+
         if st.button("➕ Adicionar Receita"):
             if descricao_receita:
                 receitas_df = adicionar_registro(
@@ -241,21 +244,21 @@ elif pagina == "💰 Receitas":
     if not receitas_df.empty:
         # Filtros
         col1, col2, col3 = st.columns(3)
- 
+
         with col1:
             categorias_filtro = ["Todas"] + list(receitas_df['categoria'].unique())
             categoria_filtro = st.selectbox("Filtrar por categoria", categorias_filtro)
-    
+
         with col2:
             data_inicio = st.date_input(
                 "Data início", value=receitas_df['data'].min().date()
             )
- 
+
         with col3:
             data_fim = st.date_input(
                 "Data fim", value=receitas_df['data'].max().date()
             )
- 
+
         # Aplicar filtros
         receitas_filtradas = receitas_df.copy()
         if categoria_filtro != "Todas":
@@ -269,7 +272,7 @@ elif pagina == "💰 Receitas":
         ] 
         # Exibir dados
         st.dataframe(receitas_filtradas, use_container_width=True)
-    
+
         # Estatísticas
         col1, col2, col3 = st.columns(3)
         with col1:
@@ -283,7 +286,7 @@ elif pagina == "💰 Receitas":
             )
         with col3:
             st.metric("Quantidade", len(receitas_filtradas))
-     
+
         # Opção para excluir
         st.subheader("🗑️ Excluir Receita")
         if not receitas_filtradas.empty:
@@ -296,7 +299,7 @@ elif pagina == "💰 Receitas":
                     f"R$ {receitas_filtradas.loc[x, 'valor']:.2f}"
                 )
             )
-       
+
             if st.button("🗑️ Excluir"):
                 receitas_df = receitas_df.drop(indice_excluir)
                 salvar_dados(receitas_df, 'receitas')
@@ -312,11 +315,11 @@ elif pagina == "💸 Despesas":
     # Formulário para adicionar despesa
     with st.expander("➕ Adicionar Nova Despesa", expanded=True):
         col1, col2 = st.columns(2)
-    
+
         with col1:
             data_despesa = st.date_input("Data", value=date.today())
             descricao_despesa = st.text_input("Descrição")
-    
+
         with col2:
             valor_despesa = st.number_input(
                 "Valor (R$)", min_value=0.01, value=1.0, step=0.01
@@ -326,7 +329,7 @@ elif pagina == "💸 Despesas":
                 ["Alimentação", "Transporte", "Moradia", "Saúde", "Educação", 
                  "Lazer", "Vestuário", "Outros"]
             )
-   
+
         if st.button("➕ Adicionar Despesa"):
             if descricao_despesa:
                 despesas_df = adicionar_registro(
@@ -341,40 +344,40 @@ elif pagina == "💸 Despesas":
 
     # Visualizar despesas
     st.subheader("📋 Lista de Despesas")
-  
+
     if not despesas_df.empty:
         # Filtros
         col1, col2, col3 = st.columns(3)
-    
+
         with col1:
             categorias_filtro = ["Todas"] + list(despesas_df['categoria'].unique())
             categoria_filtro = st.selectbox("Filtrar por categoria", categorias_filtro)
-   
+
         with col2:
             data_inicio = st.date_input(
                 "Data início", value=despesas_df['data'].min().date()
             )
-  
+
         with col3:
             data_fim = st.date_input(
                 "Data fim", value=despesas_df['data'].max().date()
             )
-    
+
         # Aplicar filtros
         despesas_filtradas = despesas_df.copy()
         if categoria_filtro != "Todas":
             despesas_filtradas = despesas_filtradas[
                 despesas_filtradas['categoria'] == categoria_filtro
             ]
-    
+
         despesas_filtradas = despesas_filtradas[
             (despesas_filtradas['data'].dt.date >= data_inicio) &
             (despesas_filtradas['data'].dt.date <= data_fim)
         ]
-   
+
         # Exibir dados
         st.dataframe(despesas_filtradas, use_container_width=True)
-  
+
         # Estatísticas
         col1, col2, col3 = st.columns(3)
         with col1:
@@ -388,7 +391,7 @@ elif pagina == "💸 Despesas":
             )
         with col3:
             st.metric("Quantidade", len(despesas_filtradas))
-    
+
         # Opção para excluir
         st.subheader("🗑️ Excluir Despesa")
         if not despesas_filtradas.empty:
@@ -401,7 +404,7 @@ elif pagina == "💸 Despesas":
                     f"R$ {despesas_filtradas.loc[x, 'valor']:.2f}"
                 )
             )
-      
+
             if st.button("🗑️ Excluir"):
                 despesas_df = despesas_df.drop(indice_excluir)
                 salvar_dados(despesas_df, 'despesas')
@@ -413,15 +416,15 @@ elif pagina == "💸 Despesas":
 # Metas
 elif pagina == "🎯 Metas":
     st.header("🎯 Gerenciar Metas Financeiras")
-    
+
     # Formulário para adicionar meta
     with st.expander("➕ Adicionar Nova Meta", expanded=True):
         col1, col2 = st.columns(2)
-        
+
         with col1:
             data_meta = st.date_input("Data Limite", value=date.today())
             descricao_meta = st.text_input("Descrição da Meta")
-        
+
         with col2:
             valor_meta = st.number_input(
                 "Valor Meta (R$)", min_value=0.01, value=1000.0, step=0.01
@@ -430,7 +433,7 @@ elif pagina == "🎯 Metas":
                 "Categoria",
                 ["Viagem", "Compras", "Investimento", "Emergência", "Outros"]
             )
-        
+
         if st.button("➕ Adicionar Meta"):
             if descricao_meta:
                 metas_df = adicionar_registro(
@@ -441,77 +444,77 @@ elif pagina == "🎯 Metas":
                 st.rerun()
             else:
                 st.error("Por favor, preencha a descrição")
-    
+
     # Visualizar metas
     st.subheader("📋 Lista de Metas")
-    
+
     if not metas_df.empty:
         # Calcular progresso das metas
         metas_com_progresso = metas_df.copy()
         metas_com_progresso['progresso'] = 0.0
-        
+
         for idx, meta in metas_com_progresso.iterrows():
             # Calcular quanto já foi economizado (receitas - despesas até a data da meta)
             data_meta = meta['data']
-            
+
             if not receitas_df.empty:
                 receitas_ate_meta = receitas_df[
                     receitas_df['data'] <= data_meta
                 ]['valor'].sum()
             else:
                 receitas_ate_meta = 0
-            
+
             if not despesas_df.empty:
                 despesas_ate_meta = despesas_df[
                     despesas_df['data'] <= data_meta
                 ]['valor'].sum()
             else:
                 despesas_ate_meta = 0
-            
+
             economias = receitas_ate_meta - despesas_ate_meta
             progresso = min((economias / meta['valor']) * 100, 100) if meta['valor'] > 0 else 0
-            
+
             metas_com_progresso.loc[idx, 'progresso'] = progresso
             metas_com_progresso.loc[idx, 'economias'] = economias
-        
+
         # Exibir metas com progresso
         for idx, meta in metas_com_progresso.iterrows():
             with st.container():
                 col1, col2, col3 = st.columns([2, 1, 1])
-                
+
                 with col1:
                     st.write(f"**{meta['descricao']}**")
                     st.write(f"Categoria: {meta['categoria']}")
                     st.write(f"Data limite: {meta['data'].strftime('%d/%m/%Y')}")
-                
+
                 with col2:
                     st.write(f"Meta: R$ {meta['valor']:,.2f}")
                     st.write(f"Economias: R$ {meta['economias']:,.2f}")
-                
+
                 with col3:
                     st.progress(meta['progresso'] / 100)
                     st.write(f"{meta['progresso']:.1f}%")
-                
+
                 st.markdown("---")
-        
+
         # Estatísticas das metas
         st.subheader("📊 Estatísticas das Metas")
         col1, col2, col3 = st.columns(3)
-        
+
         with col1:
             total_metas = metas_com_progresso['valor'].sum()
             st.metric("Total das Metas", f"R$ {total_metas:,.2f}")
-        
+
         with col2:
             media_progresso = metas_com_progresso['progresso'].mean()
             st.metric("Progresso Médio", f"{media_progresso:.1f}%")
-        
+
         with col3:
             metas_concluidas = len(
                 metas_com_progresso[metas_com_progresso['progresso'] >= 100]
             )
             st.metric("Metas Concluídas", metas_concluidas)
-        
+
         # Opção para excluir
         st.subheader("🗑️ Excluir Meta")
         indice_excluir = st.selectbox(
@@ -522,7 +525,7 @@ elif pagina == "🎯 Metas":
                 f"R$ {metas_com_progresso.loc[x, 'valor']:.2f}"
             )
         )
-        
+
         if st.button("🗑️ Excluir"):
             metas_df = metas_df.drop(indice_excluir)
             salvar_dados(metas_df, 'metas')
@@ -534,11 +537,11 @@ elif pagina == "🎯 Metas":
 # Configurações
 elif pagina == "⚙️ Configurações":
     st.header("⚙️ Configurações")
-    
+
     st.subheader("📊 Backup e Restauração")
-    
+
     col1, col2 = st.columns(2)
-    
+
     with col1:
         st.write("**Exportar Dados**")
         if st.button("📥 Exportar Receitas"):
@@ -552,7 +555,7 @@ elif pagina == "⚙️ Configurações":
                 )
             else:
                 st.info("Nenhuma receita para exportar")
-        
+
         if st.button("📥 Exportar Despesas"):
             if not despesas_df.empty:
                 csv = despesas_df.to_csv(index=False)
@@ -564,7 +567,7 @@ elif pagina == "⚙️ Configurações":
                 )
             else:
                 st.info("Nenhuma despesa para exportar")
-    
+
     with col2:
         st.write("**Limpar Dados**")
         if st.button("🗑️ Limpar Todos os Dados"):
@@ -579,23 +582,23 @@ elif pagina == "⚙️ Configurações":
                 metas_df = pd.DataFrame(
                     columns=['data', 'descricao', 'valor', 'categoria']
                 )
-                
+
                 # Salvar
                 salvar_dados(receitas_df, 'receitas')
                 salvar_dados(despesas_df, 'despesas')
                 salvar_dados(metas_df, 'metas')
-                
+
                 st.success("Todos os dados foram limpos!")
                 st.rerun()
-    
+
     st.subheader("📈 Estatísticas do Sistema")
-    
+
     col1, col2, col3 = st.columns(3)
-    
+
     with col1:
         st.metric("Total de Receitas", len(receitas_df))
         st.metric("Total de Despesas", len(despesas_df))
-    
+
     with col2:
         st.metric("Total de Metas", len(metas_df))
         if not receitas_df.empty:
@@ -603,7 +606,7 @@ elif pagina == "⚙️ Configurações":
         else:
             primeiro_registro = "N/A"
         st.metric("Primeiro Registro", primeiro_registro)
-    
+
     with col3:
         if not receitas_df.empty or not despesas_df.empty:
             if not receitas_df.empty and not despesas_df.empty:
@@ -623,7 +626,7 @@ elif pagina == "⚙️ Configurações":
         else:
             ultimo_registro = "N/A"
             dias_uso = 0
-        
+
         st.metric("Último Registro", ultimo_registro)
         st.metric("Dias de Uso", dias_uso)
 
