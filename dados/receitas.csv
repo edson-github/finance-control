@@ -1,1 +1,232 @@
 data,descricao,valor,categoria
+2022-01-05,Salário mensal,5200.00,Salário
+2022-01-15,Projeto freelance site,1800.00,Freelance
+2022-01-20,Dividendos ações,320.00,Investimentos
+2022-02-01,Aluguel apartamento,950.00,Aluguel
+2022-02-10,Prêmio rifa,200.00,Prêmio
+2022-02-18,Restituição IR,1200.00,Restituição
+2022-03-03,Reembolso viagem,450.00,Reembolso
+2022-03-12,Salário mensal,5250.00,Salário
+2022-03-20,Projeto app mobile,2500.00,Freelance
+2022-03-25,Herança família,5000.00,Herança
+2022-04-02,Aluguel loja,1100.00,Aluguel
+2022-04-10,Prêmio bingo,150.00,Prêmio
+2022-04-15,Dividendos fundos,400.00,Investimentos
+2022-05-01,Salário mensal,5300.00,Salário
+2022-05-08,Projeto consultoria,2100.00,Freelance
+2022-05-15,Restituição plano saúde,300.00,Restituição
+2022-05-20,Reembolso curso,600.00,Reembolso
+2022-06-01,Aluguel garagem,300.00,Aluguel
+2022-06-10,Prêmio sorteio,500.00,Prêmio
+2022-06-18,Dividendos ações,350.00,Investimentos
+2022-07-01,Salário mensal,5400.00,Salário
+2022-07-12,Projeto design,1700.00,Freelance
+2022-07-20,Restituição IR,1100.00,Restituição
+2022-07-25,Reembolso viagem,400.00,Reembolso
+2022-08-01,Aluguel apartamento,1000.00,Aluguel
+2022-08-10,Prêmio loteria,2000.00,Prêmio
+2022-08-15,Dividendos fundos,420.00,Investimentos
+2022-09-01,Salário mensal,5500.00,Salário
+2022-09-10,Projeto web,2300.00,Freelance
+2022-09-18,Restituição plano saúde,350.00,Restituição
+2022-09-25,Reembolso curso,700.00,Reembolso
+2022-10-01,Aluguel loja,1200.00,Aluguel
+2022-10-10,Prêmio bingo,180.00,Prêmio
+2022-10-15,Dividendos ações,370.00,Investimentos
+2022-11-01,Salário mensal,5600.00,Salário
+2022-11-08,Projeto consultoria,2200.00,Freelance
+2022-11-15,Restituição IR,1300.00,Restituição
+2022-11-20,Reembolso viagem,500.00,Reembolso
+2022-12-01,Aluguel garagem,350.00,Aluguel
+2022-12-10,Prêmio sorteio,600.00,Prêmio
+2022-12-18,Dividendos fundos,390.00,Investimentos
+2023-01-05,Salário mensal,5700.00,Salário
+2023-01-15,Projeto freelance app,2000.00,Freelance
+2023-01-20,Dividendos ações,340.00,Investimentos
+2023-02-01,Aluguel apartamento,1050.00,Aluguel
+2023-02-10,Prêmio rifa,250.00,Prêmio
+2023-02-18,Restituição IR,1250.00,Restituição
+2023-03-03,Reembolso viagem,480.00,Reembolso
+2023-03-12,Salário mensal,5750.00,Salário
+2023-03-20,Projeto design,1800.00,Freelance
+2023-03-25,Herança família,6000.00,Herança
+2023-04-02,Aluguel loja,1300.00,Aluguel
+2023-04-10,Prêmio bingo,170.00,Prêmio
+2023-04-15,Dividendos fundos,410.00,Investimentos
+2023-05-01,Salário mensal,5800.00,Salário
+2023-05-08,Projeto consultoria,2300.00,Freelance
+2023-05-15,Restituição plano saúde,350.00,Restituição
+2023-05-20,Reembolso curso,800.00,Reembolso
+2023-06-01,Aluguel garagem,400.00,Aluguel
+2023-06-10,Prêmio sorteio,700.00,Prêmio
+2023-06-18,Dividendos ações,360.00,Investimentos
+2023-07-01,Salário mensal,5900.00,Salário
+2023-07-12,Projeto web,2500.00,Freelance
+2023-07-20,Restituição IR,1400.00,Restituição
+2023-07-25,Reembolso viagem,600.00,Reembolso
+2023-08-01,Aluguel apartamento,1100.00,Aluguel
+2023-08-10,Prêmio loteria,2500.00,Prêmio
+2023-08-15,Dividendos fundos,430.00,Investimentos
+2023-09-01,Salário mensal,6000.00,Salário
+2023-09-10,Projeto design,2100.00,Freelance
+2023-09-18,Restituição plano saúde,400.00,Restituição
+2023-09-25,Reembolso curso,900.00,Reembolso
+2023-10-01,Aluguel loja,1400.00,Aluguel
+2023-10-10,Prêmio bingo,200.00,Prêmio
+2023-10-15,Dividendos ações,380.00,Investimentos
+2023-11-01,Salário mensal,6100.00,Salário
+2023-11-08,Projeto consultoria,2400.00,Freelance
+2023-11-15,Restituição IR,1350.00,Restituição
+2023-11-20,Reembolso viagem,700.00,Reembolso
+2023-12-01,Aluguel garagem,450.00,Aluguel
+2023-12-10,Prêmio sorteio,800.00,Prêmio
+2023-12-18,Dividendos fundos,400.00,Investimentos
+2024-01-05,Salário mensal,6200.00,Salário
+2024-01-15,Projeto freelance site,2200.00,Freelance
+2024-01-20,Dividendos ações,350.00,Investimentos
+2024-02-01,Aluguel apartamento,1150.00,Aluguel
+2024-02-10,Prêmio rifa,300.00,Prêmio
+2024-02-18,Restituição IR,1400.00,Restituição
+2024-03-03,Reembolso viagem,520.00,Reembolso
+2024-03-12,Salário mensal,6250.00,Salário
+2024-03-20,Projeto app mobile,2700.00,Freelance
+2024-03-25,Herança família,7000.00,Herança
+2024-04-02,Aluguel loja,1500.00,Aluguel
+2024-04-10,Prêmio bingo,220.00,Prêmio
+2024-04-15,Dividendos fundos,440.00,Investimentos
+2024-05-01,Salário mensal,6300.00,Salário
+2024-05-08,Projeto consultoria,2500.00,Freelance
+2024-05-15,Restituição plano saúde,450.00,Restituição
+2024-05-20,Reembolso curso,1000.00,Reembolso
+2024-06-01,Aluguel garagem,500.00,Aluguel
+2024-06-10,Prêmio sorteio,900.00,Prêmio
+2024-06-18,Dividendos ações,370.00,Investimentos
+2024-07-01,Salário mensal,6400.00,Salário
+2024-07-12,Projeto design,2300.00,Freelance
+2024-07-20,Restituição IR,1500.00,Restituição
+2024-07-25,Reembolso viagem,800.00,Reembolso
+2024-08-01,Aluguel apartamento,1200.00,Aluguel
+2024-08-10,Prêmio loteria,3000.00,Prêmio
+2024-08-15,Dividendos fundos,450.00,Investimentos
+2024-09-01,Salário mensal,6500.00,Salário
+2024-09-10,Projeto web,2700.00,Freelance
+2024-09-18,Restituição plano saúde,500.00,Restituição
+2024-09-25,Reembolso curso,1100.00,Reembolso
+2024-10-01,Aluguel loja,1600.00,Aluguel
+2024-10-10,Prêmio bingo,250.00,Prêmio
+2024-10-15,Dividendos ações,390.00,Investimentos
+2024-11-01,Salário mensal,6600.00,Salário
+2024-11-08,Projeto consultoria,2600.00,Freelance
+2024-11-15,Restituição IR,1450.00,Restituição
+2024-11-20,Reembolso viagem,900.00,Reembolso
+2024-12-01,Aluguel garagem,550.00,Aluguel
+2024-12-10,Prêmio sorteio,1000.00,Prêmio
+2024-12-18,Dividendos fundos,420.00,Investimentos
+2022-01-10,Venda de carro,25000.00,Outros
+2022-02-15,Venda de móveis,1200.00,Outros
+2022-03-20,Venda de bicicleta,400.00,Outros
+2022-04-25,Venda de computador,3500.00,Outros
+2022-05-30,Venda de livros,200.00,Outros
+2022-06-15,Venda de celular,800.00,Outros
+2022-07-20,Venda de eletrodoméstico,1500.00,Outros
+2022-08-25,Venda de TV,900.00,Outros
+2022-09-30,Venda de videogame,1200.00,Outros
+2022-10-15,Venda de câmera,700.00,Outros
+2022-11-20,Venda de tablet,600.00,Outros
+2022-12-25,Venda de relógio,500.00,Outros
+2023-01-10,Bônus anual,3000.00,Bônus
+2023-02-15,Bônus desempenho,1500.00,Bônus
+2023-03-20,Bônus produtividade,2000.00,Bônus
+2023-04-25,Bônus projeto,2500.00,Bônus
+2023-05-30,Bônus equipe,1800.00,Bônus
+2023-06-15,Bônus extra,1000.00,Bônus
+2023-07-20,Bônus resultado,2200.00,Bônus
+2023-08-25,Bônus comissão,1700.00,Bônus
+2023-09-30,Bônus participação,900.00,Bônus
+2023-10-15,Bônus incentivo,1200.00,Bônus
+2023-11-20,Bônus meta,800.00,Bônus
+2023-12-25,Bônus final de ano,3500.00,Bônus
+2024-01-10,Royalties livro,600.00,Royalties
+2024-02-15,Royalties música,800.00,Royalties
+2024-03-20,Royalties patente,1200.00,Royalties
+2024-04-25,Royalties software,2000.00,Royalties
+2024-05-30,Royalties imagem,400.00,Royalties
+2024-06-15,Royalties marca,1000.00,Royalties
+2024-07-20,Royalties franquia,1500.00,Royalties
+2024-08-25,Royalties design,900.00,Royalties
+2024-09-30,Royalties aplicativo,1200.00,Royalties
+2024-10-15,Royalties consultoria,700.00,Royalties
+2024-11-20,Royalties palestra,600.00,Royalties
+2024-12-25,Royalties curso,500.00,Royalties
+2022-01-12,Cashback cartão,50.00,Cashback
+2022-02-18,Cashback compras,80.00,Cashback
+2022-03-24,Cashback viagem,120.00,Cashback
+2022-04-30,Cashback supermercado,30.00,Cashback
+2022-05-16,Cashback farmácia,20.00,Cashback
+2022-06-22,Cashback combustível,40.00,Cashback
+2022-07-28,Cashback restaurante,60.00,Cashback
+2022-08-03,Cashback cinema,15.00,Cashback
+2022-09-09,Cashback hotel,100.00,Cashback
+2022-10-15,Cashback aluguel,25.00,Cashback
+2022-11-21,Cashback curso,35.00,Cashback
+2022-12-27,Cashback aplicativo,10.00,Cashback
+2023-01-13,Restituição seguro,200.00,Restituição
+2023-02-19,Restituição viagem,300.00,Restituição
+2023-03-25,Restituição compra,150.00,Restituição
+2023-04-30,Restituição evento,100.00,Restituição
+2023-05-16,Restituição hotel,250.00,Restituição
+2023-06-22,Restituição passagem,180.00,Restituição
+2023-07-28,Restituição aluguel,220.00,Restituição
+2023-08-03,Restituição curso,90.00,Restituição
+2023-09-09,Restituição saúde,400.00,Restituição
+2023-10-15,Restituição imposto,350.00,Restituição
+2023-11-21,Restituição cartão,60.00,Restituição
+2023-12-27,Restituição aplicativo,30.00,Restituição
+2024-01-14,Reembolso saúde,120.00,Reembolso
+2024-02-20,Reembolso viagem,200.00,Reembolso
+2024-03-26,Reembolso compra,80.00,Reembolso
+2024-04-01,Reembolso evento,60.00,Reembolso
+2024-05-17,Reembolso hotel,150.00,Reembolso
+2024-06-23,Reembolso passagem,90.00,Reembolso
+2024-07-29,Reembolso aluguel,110.00,Reembolso
+2024-08-04,Reembolso curso,70.00,Reembolso
+2024-09-10,Reembolso saúde,300.00,Reembolso
+2024-10-16,Reembolso imposto,250.00,Reembolso
+2024-11-22,Reembolso cartão,40.00,Reembolso
+2024-12-28,Reembolso aplicativo,20.00,Reembolso
+2022-01-15,Outros rendimentos,100.00,Outros
+2022-02-20,Outros rendimentos,200.00,Outros
+2022-03-25,Outros rendimentos,300.00,Outros
+2022-04-30,Outros rendimentos,400.00,Outros
+2022-05-15,Outros rendimentos,500.00,Outros
+2022-06-20,Outros rendimentos,600.00,Outros
+2022-07-25,Outros rendimentos,700.00,Outros
+2022-08-30,Outros rendimentos,800.00,Outros
+2022-09-15,Outros rendimentos,900.00,Outros
+2022-10-20,Outros rendimentos,1000.00,Outros
+2022-11-25,Outros rendimentos,1100.00,Outros
+2022-12-30,Outros rendimentos,1200.00,Outros
+2023-01-15,Outros rendimentos,1300.00,Outros
+2023-02-20,Outros rendimentos,1400.00,Outros
+2023-03-25,Outros rendimentos,1500.00,Outros
+2023-04-30,Outros rendimentos,1600.00,Outros
+2023-05-15,Outros rendimentos,1700.00,Outros
+2023-06-20,Outros rendimentos,1800.00,Outros
+2023-07-25,Outros rendimentos,1900.00,Outros
+2023-08-30,Outros rendimentos,2000.00,Outros
+2023-09-15,Outros rendimentos,2100.00,Outros
+2023-10-20,Outros rendimentos,2200.00,Outros
+2023-11-25,Outros rendimentos,2300.00,Outros
+2023-12-30,Outros rendimentos,2400.00,Outros
+2024-01-15,Outros rendimentos,2500.00,Outros
+2024-02-20,Outros rendimentos,2600.00,Outros
+2024-03-25,Outros rendimentos,2700.00,Outros
+2024-04-30,Outros rendimentos,2800.00,Outros
+2024-05-15,Outros rendimentos,2900.00,Outros
+2024-06-20,Outros rendimentos,3000.00,Outros
+2024-07-25,Outros rendimentos,3100.00,Outros
+2024-08-30,Outros rendimentos,3200.00,Outros
+2024-09-15,Outros rendimentos,3300.00,Outros
+2024-10-20,Outros rendimentos,3400.00,Outros
+2024-11-25,Outros rendimentos,3500.00,Outros
+2024-12-30,Outros rendimentos,3600.00,Outros

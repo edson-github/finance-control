@@ -1,1 +1,102 @@
 data,descricao,valor,categoria
+2024-12-31,Viagem de férias,5000.00,Viagem
+2024-09-30,Fundo de emergência,3000.00,Emergência
+2024-11-15,Comprar notebook,4000.00,Compras
+2024-08-01,Reforma da casa,8000.00,Moradia
+2024-10-10,Curso de inglês,2000.00,Educação
+2024-07-20,Reserva médica,2500.00,Saúde
+2024-12-01,Presentes de Natal,1500.00,Outros
+2024-06-30,Investimento em ações,3500.00,Investimento
+2024-09-01,Viagem de trabalho,4000.00,Viagem
+2024-08-15,Comprar bicicleta,1200.00,Compras
+2024-11-01,Reserva para impostos,1800.00,Outros
+2024-07-01,Curso de programação,2200.00,Educação
+2024-10-01,Plano odontológico,900.00,Saúde
+2024-12-15,Doação beneficente,1000.00,Outros
+2024-09-15,Investimento em renda fixa,2000.00,Investimento
+2024-08-20,Viagem de lazer,3500.00,Viagem
+2024-11-20,Comprar celular,2500.00,Compras
+2024-07-10,Reserva para pets,800.00,Outros
+2024-10-20,Curso de fotografia,1800.00,Educação
+2024-12-20,Check-up anual,700.00,Saúde
+2024-09-20,Investimento em fundos,3000.00,Investimento
+2024-08-25,Viagem de família,6000.00,Viagem
+2024-11-25,Comprar TV,2200.00,Compras
+2024-07-15,Reserva para carro,4000.00,Outros
+2024-10-25,Curso de culinária,1200.00,Educação
+2024-12-25,Exames médicos,900.00,Saúde
+2024-09-25,Investimento em CDB,2500.00,Investimento
+2024-08-30,Viagem internacional,10000.00,Viagem
+2024-11-30,Comprar geladeira,3000.00,Compras
+2024-07-25,Reserva para festas,1500.00,Outros
+2024-10-30,Curso de design,1600.00,Educação
+2024-12-30,Plano de saúde,1200.00,Saúde
+2024-09-30,Investimento em LCI,1800.00,Investimento
+2024-08-05,Viagem curta,2000.00,Viagem
+2024-11-05,Comprar micro-ondas,800.00,Compras
+2024-07-05,Reserva para emergências,3500.00,Emergência
+2024-10-05,Curso de música,1400.00,Educação
+2024-12-05,Consulta médica,600.00,Saúde
+2024-09-05,Investimento em Tesouro,2200.00,Investimento
+2024-08-10,Viagem romântica,2500.00,Viagem
+2024-11-10,Comprar sofá,1800.00,Compras
+2024-07-30,Reserva para viagens,5000.00,Viagem
+2024-10-15,Curso de espanhol,1300.00,Educação
+2024-12-10,Exame oftalmológico,700.00,Saúde
+2024-09-10,Investimento em ações,3200.00,Investimento
+2024-08-15,Viagem de aventura,4000.00,Viagem
+2024-11-15,Comprar máquina de lavar,2000.00,Compras
+2024-07-20,Reserva para presentes,1000.00,Outros
+2024-10-20,Curso de francês,1500.00,Educação
+2024-12-20,Consulta odontológica,800.00,Saúde
+2024-09-20,Investimento em fundos imobiliários,3500.00,Investimento
+2024-08-20,Viagem de estudos,3000.00,Viagem
+2024-11-20,Comprar fogão,1200.00,Compras
+2024-07-25,Reserva para manutenção,900.00,Outros
+2024-10-25,Curso de TI,2500.00,Educação
+2024-12-25,Exame cardiológico,950.00,Saúde
+2024-09-25,Investimento em debêntures,2700.00,Investimento
+2024-08-25,Viagem de negócios,4500.00,Viagem
+2024-11-25,Comprar armário,1600.00,Compras
+2024-07-30,Reserva para saúde,2000.00,Saúde
+2024-10-30,Curso de marketing,1700.00,Educação
+2024-12-30,Plano de previdência,2500.00,Investimento
+2024-09-30,Investimento em poupança,1000.00,Investimento
+2024-08-30,Viagem para praia,3500.00,Viagem
+2024-11-30,Comprar cama,1800.00,Compras
+2024-07-05,Reserva para lazer,1200.00,Outros
+2024-10-05,Curso de yoga,900.00,Educação
+2024-12-05,Consulta dermatológica,650.00,Saúde
+2024-09-05,Investimento em ações,2100.00,Investimento
+2024-08-05,Viagem para o interior,1800.00,Viagem
+2024-11-05,Comprar poltrona,700.00,Compras
+2024-07-10,Reserva para pets,600.00,Outros
+2024-10-10,Curso de fotografia,1100.00,Educação
+2024-12-10,Exame de sangue,500.00,Saúde
+2024-09-10,Investimento em fundos,2300.00,Investimento
+2024-08-10,Viagem de aventura,2200.00,Viagem
+2024-11-10,Comprar escrivaninha,900.00,Compras
+2024-07-15,Reserva para carro,3000.00,Outros
+2024-10-15,Curso de culinária,1200.00,Educação
+2024-12-15,Consulta ortopédica,800.00,Saúde
+2024-09-15,Investimento em renda fixa,2500.00,Investimento
+2024-08-15,Viagem de família,4000.00,Viagem
+2024-11-15,Comprar cadeira,600.00,Compras
+2024-07-20,Reserva para festas,1500.00,Outros
+2024-10-20,Curso de design,1300.00,Educação
+2024-12-20,Check-up geral,900.00,Saúde
+2024-09-20,Investimento em CDB,2000.00,Investimento
+2024-08-20,Viagem internacional,8000.00,Viagem
+2024-11-20,Comprar impressora,800.00,Compras
+2024-07-25,Reserva para emergências,2500.00,Emergência
+2024-10-25,Curso de inglês,2000.00,Educação
+2024-12-25,Exame neurológico,1200.00,Saúde
+2024-09-25,Investimento em LCI,1800.00,Investimento
+2024-08-25,Viagem de trabalho,3500.00,Viagem
+2024-11-25,Comprar ventilador,400.00,Compras
+2024-07-30,Reserva para viagens,5000.00,Viagem
+2024-10-30,Curso de espanhol,1500.00,Educação
+2024-12-30,Plano de saúde,1200.00,Saúde
+2024-09-30,Investimento em poupança,1000.00,Investimento
+2024-08-30,Viagem para montanha,2500.00,Viagem
+2024-11-30,Comprar liquidificador,300.00,Compras
